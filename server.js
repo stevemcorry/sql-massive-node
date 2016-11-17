@@ -4,7 +4,7 @@ var massive = require('massive');
 var cors = require('cors');
 
 var app = module.exports = express();
-var massiveInstance = massive.connectSync({connectionString: 'postgres://postgres:yeah1buddy@localhost/sql-massive-node'});
+var massiveInstance = massive.connectSync({connectionString: 'postgres://postgres@localhost/sql-massive-node'});
 
 app.use(bodyParser.json());
 app.use(cors());
